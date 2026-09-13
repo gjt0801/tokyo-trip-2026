@@ -23,8 +23,8 @@ recs.forEach(([d,s,places])=>{
 });
 const routes=[
 ['Hatsudai Station Tokyo','Ebisu Station Tokyo','Harajuku Station Tokyo|Shibuya Station Tokyo'],
-['Sensoji Tokyo','Thermae Yu Shinjuku','Akihabara Station Tokyo'],
-['Daikanyama Station Tokyo','Sangenjaya Station Tokyo','Nakameguro Station Tokyo'],
+['Hatsudai Station Tokyo','Hatsudai Station Tokyo','Sensoji Tokyo|Akihabara Station Tokyo|Thermae Yu Shinjuku'],
+['Hatsudai Station Tokyo','Hatsudai Station Tokyo','Daikanyama Station Tokyo|Nakameguro Station Tokyo|Sangenjaya Station Tokyo'],
 ['Hatsudai Station Tokyo','Narita International Airport','']
 ];
 routes.forEach(([start,end,via],i)=>{
@@ -44,4 +44,4 @@ const alt=document.createElement('div');alt.className='suggestions';alt.innerHTM
 [['네무로하나마루 긴자점','스시 식사 후보','Nemuro Hanamaru Ginza'],['Fukumimi Ginza 1','야키토리 저녁 후보','Fukumimi Ginza 1'],['有楽町産直横丁','이자카야 2차 후보','有楽町産直横丁']].forEach(([n,c,q])=>{const p=document.createElement('p');const a=document.createElement('a');a.href=link(q);a.textContent=n+' ↗';a.target='_blank';p.append(a,' · '+c);alt.append(p)});days[2].append(alt);
 document.querySelector('.footer').textContent='공유 Google Maps 저장 목록 기준 · 식당은 선택 후보이며 예약·영업시간은 방문 전 확인하세요. 지도 표시에는 인터넷 연결이 필요합니다.';
 })();
-</script></body></html>
+</script><script>(()=>{[1,2].forEach(i=>{const flow=document.querySelectorAll('[data-card] .flow')[i];const first=document.createElement('span');first.className='place';first.textContent='숙소';const arrow1=document.createElement('span');arrow1.className='arrow';arrow1.textContent='→';flow.prepend(arrow1);flow.prepend(first);const arrow2=document.createElement('span');arrow2.className='arrow';arrow2.textContent='→';const last=document.createElement('span');last.className='place';last.textContent='숙소';flow.append(arrow2,last)});})();</script></body></html>
